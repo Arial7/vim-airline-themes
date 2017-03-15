@@ -18,7 +18,7 @@ let s:gui0D = "#1290bf"
 let s:gui0E = "#c85e7c"
 let s:gui0F = "#b33508"
 
-let s:cterm00 = 53
+let s:cterm00 = 00
 let s:cterm01 = 59
 let s:cterm02 = 59
 let s:cterm03 = 96
@@ -39,26 +39,41 @@ let s:N1   = [ s:gui00, s:gui0B, s:cterm00, s:cterm0B ]
 let s:N2   = [ s:gui06, s:gui00, s:cterm06, s:cterm00 ]
 let s:N3   = [ s:gui06, s:gui00, s:cterm06, s:cterm00 ]
 let g:airline#themes#hopscotch_minimal#palette.normal = airline#themes#generate_color_map(s:N1, s:N2, s:N3)
+let g:airline#themes#hopscotch_minimal#palette.normal_modified = {
+    \ 'airline_c': [ s:gui09, s:gui00, s:cterm09, s:cterm00 ],
+    \ }
 
 let s:I1   = [ s:gui00, s:gui0C, s:cterm00, s:cterm0C ]
 let s:I2   = [ s:gui06, s:gui00, s:cterm06, s:cterm00 ]
 let s:I3   = [ s:gui06, s:gui00, s:cterm06, s:cterm00 ]
 let g:airline#themes#hopscotch_minimal#palette.insert = airline#themes#generate_color_map(s:I1, s:I2, s:I3)
+let g:airline#themes#hopscotch_minimal#palette.insert_modified = {
+    \ 'airline_c': [ s:gui09, s:gui00, s:cterm09, s:cterm00 ],
+    \ }
 
 let s:R1   = [ s:gui00, s:gui08, s:cterm00, s:cterm08 ]
 let s:R2   = [ s:gui06, s:gui00, s:cterm06, s:cterm00 ]
 let s:R3   = [ s:gui06, s:gui00, s:cterm06, s:cterm00 ]
 let g:airline#themes#hopscotch_minimal#palette.replace = airline#themes#generate_color_map(s:R1, s:R2, s:R3)
+let g:airline#themes#hopscotch_minimal#palette.replace_modified = {
+    \ 'airline_c': [ s:gui09, s:gui00, s:cterm09, s:cterm00 ],
+    \ }
 
 let s:V1   = [ s:gui00, s:gui0A, s:cterm00, s:cterm0A ]
 let s:V2   = [ s:gui06, s:gui02, s:cterm06, s:cterm00 ]
 let s:V3   = [ s:gui06, s:gui00, s:cterm06, s:cterm00 ]
 let g:airline#themes#hopscotch_minimal#palette.visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
+let g:airline#themes#hopscotch_minimal#palette.visual_modified = {
+    \ 'airline_c': [ s:gui09, s:gui00, s:cterm09, s:cterm00 ],
+    \ }
 
 let s:IA1   = [ s:gui06, s:gui00, s:cterm06, s:cterm00 ]
 let s:IA2   = [ s:gui05, s:gui00, s:cterm05, s:cterm00 ]
 let s:IA3   = [ s:gui05, s:gui00, s:cterm05, s:cterm00 ]
 let g:airline#themes#hopscotch_minimal#palette.inactive = airline#themes#generate_color_map(s:IA1, s:IA2, s:IA3)
+let g:airline#themes#hopscotch_minimal#palette.inactive_modified = {
+    \ 'airline_c': [ s:gui09, s:gui00, s:cterm09, s:cterm00 ],
+    \ }
 
 " Here we define the color map for ctrlp.  We check for the g:loaded_ctrlp
 " variable so that related functionality is loaded iff the user is using
